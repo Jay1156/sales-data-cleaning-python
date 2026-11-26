@@ -4,6 +4,7 @@
 In this project, I took a raw B2B sales dataset (`sales_data_sample.csv`) with 2,823 rows and 25 columns and cleaned it step-by-step using Python and Pandas. The main goal was to fix real-world data issues—like encoding glitches, missing values, inconsistent state codes, and messy spacing—so the final file (`sales_data_cleaned.csv`) is actually ready for SQL querying, EDA, or Tableau dashboards without breaking anything downstream.
 
 ## Project Structure
+```
 sales-data-cleaning-python/
 ├── data/
 │   ├── raw/
@@ -13,6 +14,7 @@ sales-data-cleaning-python/
 ├── scripts/
 │   └── pandasProject.py
 └── README.md
+```
 
 ## What I Fixed in the Data
 1. **Preserved North America (`"NA"`) in `territory`:** By default, Pandas treats `"NA"` as a missing value (`NaN`). I handled this properly so North American region records stayed intact instead of showing up as nulls.
