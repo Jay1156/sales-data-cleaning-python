@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as np
 
-df = pd.read_csv(r"E:\Data Engineering\Python Projects\Pandas project\sales_data_sample.csv", encoding = "latin1")
+df = pd.read_csv("data/raw/sales_data_sample.csv", encoding = "latin1")
 # print(df.shape())
 # print(df.info())
 # print(df.isna().sum())
@@ -101,4 +101,4 @@ df["contactfirstname"] = df["contactfirstname"].str.replace("^Mart.*$", "Martin"
 
 # print(df.isna().sum().sum())
 # print(df.info)
-df.to_csv("sales_data_cleaned.csv", index=False)
+df.to_csv("data/processed/sales_data_cleaned.csv", index=False)
